@@ -6,7 +6,8 @@
 }
 
 body {
-  overflow: visible;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .wrapper {
@@ -47,7 +48,6 @@ p + h3 {
 
 .card {
   display: flex;
-  width: 100%;
   border-radius: 20px;
   background-color: white;
   box-shadow: 1px 3px 10px #eaeaea;
@@ -59,11 +59,10 @@ p + h3 {
 }
 
 .image-pop {
-  flex-basis: 40%;
+  flex: 0 0 40%;
   background-size: cover;
   background-position: center;
   border-radius: 20px 0 0 20px;
-  flex-shrink: 0;
 }
 
 .border {
@@ -86,8 +85,8 @@ p + h3 {
 }
 
 .text-pop {
-  padding: 15px 15px;
-  flex-basis: 60%;
+  padding: 15px;
+  flex: 0 0 60%;
   justify-content: space-between;
   position: relative;
 }
@@ -150,19 +149,19 @@ header {
   display: none;
 }
 
-.nav-tablet p {
-  margin-top: 0;
-  padding-top: 41px;
+.nav-tablet {
+  list-style-type: none;
 }
 
 #signup {
   color: #0065fc;
   font-weight: 600;
+  padding-top: 41px;
 }
 
 /* --- NAVIGATION --- */
 
-nav {
+#smartphone {
   width: 100%;
   justify-content: space-between;
   margin-top: 25px;
@@ -298,12 +297,7 @@ input::placeholder {
   color: #f2f2f2;
 }
 
-#info {
-  flex-wrap: wrap;
-}
-
 .info {
-  flex-basis: 10%;
   margin-top: 8px;
 }
 
@@ -350,7 +344,6 @@ input::placeholder {
   flex-direction: column;
   height: 195px;
   margin-bottom: 12px;
-  justify-content: space-around;
 }
 
 .image-acc {
@@ -394,6 +387,11 @@ input::placeholder {
 
 #activities {
   flex-direction: column;
+  flex: 0 0 100%;
+}
+
+#activities h2 {
+  margin-top: 0;
 }
 
 .card-act {
@@ -452,18 +450,30 @@ footer {
     display: flex;
   }
 
-  nav {
+  #smartphone {
     display: none;
   }
 
-  .nav-tablet {
-    display: flex;
-    flex-direction: row;
+  #tablet {
+    margin-top: 0;
   }
 
-  .nav-tablet p {
+  .nav-tablet {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  .nav-tablet li {
+    font-weight: 300;
     border-top: solid #f2f2f2 3px;
     padding: 45px 25px 0;
+    margin-top: 0;
+  }
+
+  .nav-tablet li {
+    padding-top: 41px;
   }
 
   #popular {
@@ -482,7 +492,6 @@ footer {
     flex-direction: column;
     height: 250px;
     flex-basis: 30%;
-    margin-bottom: 25px;
   }
 
   .image-pop {
@@ -500,44 +509,145 @@ footer {
     top: 45px;
   }
 
-  .card-acc,
+  .card-acc {
+    flex-direction: row;
+    height: 145px;
+    flex: 0 0 48%;
+    margin-bottom: 25px;
+  }
+
+  .image-acc {
+    flex: 0 0 40%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0 0 20px;
+    height: auto;
+  }
+
+  .text-acc {
+    padding: 15px;
+    height: auto;
+    justify-content: space-between;
+    position: relative;
+    flex: 0 0 60%;
+  }
+
+  .text-acc p {
+    position: absolute;
+    top: 60px;
+  }
+
   .card-act {
     flex-basis: 30%;
     margin-bottom: 25px;
   }
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1100px) {
   .wrapper-desktop {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    padding: 0 20px;
+    justify-content: space-between;
   }
 
-  .wrapper-desktop h3 {
-    margin-right: 25px;
+  #search {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .filter {
     margin-right: 25px;
   }
+
+  .filter-desktop {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .filter-desktop h3 {
+    margin-right: 25px;
+  }
+
   #accommodations {
     background-color: #f2f2f2;
     border-radius: 20px;
     flex: 0 0 63%;
   }
 
+  .card-acc {
+    flex-direction: column;
+    height: 195px;
+    flex: 0 0 30%;
+  }
+
+  .image-acc {
+    border-radius: 20px 20px 0 0;
+    flex: 0 0 60%;
+  }
+
+  .text-acc {
+    padding: 5px 15px 10px;
+    flex: 0 0 40%;
+    justify-content: space-between;
+  }
+
+  .text-acc p {
+    position: unset;
+  }
+
   #popular {
     order: 2;
     flex: 0 0 34%;
+    margin: 0 0 0 20px;
+  }
+
+  #popular .section-tablet {
+    flex-direction: column;
+  }
+
+  .card-pop {
+    flex-direction: row;
+    height: 145px;
+  }
+
+  .card-pop + .card-pop {
+    margin-top: 25px;
+  }
+
+  .text-pop {
+    padding: 15px;
+    flex: 0 0 60%;
+    justify-content: space-between;
+    position: relative;
+    position: relative;
+  }
+
+  .text-pop p {
+    position: absolute;
+    top: 60px;
+  }
+
+  .image-pop {
+    border-radius: 20px 0 0 20px;
+    flex: 0 0 40%;
   }
 
   #activities {
     order: 3;
   }
 
+  #activities .section-tablet {
+  }
+
+  .card-act {
+    flex: 0 0 23%;
+  }
+
   footer {
     flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   footer div {
