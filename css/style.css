@@ -30,7 +30,7 @@ h2,
   margin-bottom: 25px;
 }
 
-h3:last-child {
+#accommodations h3 {
   margin-bottom: 0;
 }
 
@@ -53,16 +53,9 @@ p + h3 {
   box-shadow: 1px 3px 10px #eaeaea;
 }
 
-.card-pop {
-  height: 145px;
-  margin-bottom: 10px;
-}
-
-.image-pop {
-  flex: 0 0 40%;
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px 0 0 20px;
+.card:hover {
+  cursor: pointer;
+  color: black;
 }
 
 .border {
@@ -124,7 +117,7 @@ footer {
 }
 
 section,
-#search,
+/* #search, */
 footer {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -151,6 +144,7 @@ header {
 
 .nav-tablet {
   list-style-type: none;
+  margin-top: 0;
 }
 
 #signup {
@@ -196,6 +190,10 @@ a:visited {
 }
 
 /* INPUT FIELD AND FILTER BUTTONS */
+
+#search {
+  margin-top: 20px;
+}
 
 input {
   width: 100%;
@@ -246,7 +244,7 @@ input::placeholder {
   right: 0px;
 }
 
-#filter-div {
+#button-list {
   flex-wrap: wrap;
 }
 
@@ -310,6 +308,7 @@ input::placeholder {
 
 #popular {
   flex-direction: column;
+  margin: 30px 0 0 0;
 }
 
 #headline-popular {
@@ -317,9 +316,16 @@ input::placeholder {
   justify-content: space-between;
 }
 
-.overview-acc {
-  display: flex;
-  flex-direction: column;
+.card-pop {
+  height: 145px;
+  margin-bottom: 10px;
+}
+
+.image-pop {
+  flex: 0 0 40%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 0 0 20px;
 }
 
 #popular-1 {
@@ -454,15 +460,9 @@ footer {
     display: none;
   }
 
-  #tablet {
-    margin-top: 0;
-  }
-
   .nav-tablet {
-    margin-top: 0;
     display: flex;
     flex-direction: row;
-    list-style-type: none;
   }
 
   .nav-tablet li {
@@ -477,7 +477,7 @@ footer {
   }
 
   #popular {
-    margin: 0 20px;
+    margin: 30px 20px 0;
     border-radius: 20px;
   }
 
@@ -543,17 +543,37 @@ footer {
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1220px) {
+  header,
+  #search,
+  .wrapper-desktop {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  #search,
+  header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #info {
+    max-width: 430px;
+  }
+
+  #popular,
+  #accommodations {
+    margin: 10px 0 0 0;
+  }
+
+  #activities {
+    margin: 30px 0 0 0;
+  }
+
   .wrapper-desktop {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 20px;
     justify-content: space-between;
-  }
-
-  #search {
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .filter {
@@ -599,7 +619,6 @@ footer {
   #popular {
     order: 2;
     flex: 0 0 34%;
-    margin: 0 0 0 20px;
   }
 
   #popular .section-tablet {
@@ -609,6 +628,7 @@ footer {
   .card-pop {
     flex-direction: row;
     height: 145px;
+    margin-bottom: 0;
   }
 
   .card-pop + .card-pop {
@@ -635,6 +655,8 @@ footer {
 
   #activities {
     order: 3;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #activities .section-tablet {
