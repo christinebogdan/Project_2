@@ -15,7 +15,7 @@
     ></script>
   </head>
   <body>
-    <header class="wrapper">
+    <header class="flex-wrapper">
       <!-- log and nav -->
       <img
         src="images/logo/Reservia.svg"
@@ -24,16 +24,18 @@
         id="logo"
       />
       <nav id="tablet">
-        <ul class="nav-tablet">
-          <li class="tablet"><a href="#accommodations">Accommodations</a></li>
-          <li class="tablet"><a href="#activities">Activities</a></li>
+        <ul id="nav-tablet">
+          <li class="li-tablet">
+            <a href="#accommodations">Accommodations</a>
+          </li>
+          <li class="li-tablet"><a href="#activities">Activities</a></li>
           <li id="signup">Sign Up</li>
         </ul>
       </nav>
     </header>
 
     <nav id="smartphone">
-      <ul class="nav wrapper">
+      <ul id="nav-smartphone" class="flex-wrapper">
         <li><a href="#accommodations">Accommodations</a></li>
         <li><a href="#activities">Activities</a></li>
       </ul>
@@ -45,7 +47,7 @@
         <h1>Find a place for your dream vacation</h1>
         <p>Downtown or in nature</p>
 
-        <div class="input-field">
+        <div class="input-wrapper">
           <div id="location">
             <i class="fas fa-map-marker-alt"></i>
           </div>
@@ -57,38 +59,38 @@
 
         <div class="filter-desktop">
           <h3>Filters</h3>
-          <div class="wrapper" id="button-list">
-            <button class="filter">
+          <div class="flex-wrapper" id="button-list">
+            <div class="button-wrapper">
+              <button class="filter">Low cost</button>
               <div class="filter-icon">
                 <i class="fas fa-money-bill-wave fa-fw icon"></i>
               </div>
-              Low cost
-            </button>
+            </div>
 
-            <button class="filter">
+            <div class="button-wrapper">
+              <button class="filter">Romantic</button>
               <div class="filter-icon">
                 <i class="fas fa-heart fa-fw icon"></i>
               </div>
-              Romantic
-            </button>
+            </div>
 
-            <button class="filter">
+            <div class="button-wrapper">
+              <button class="filter">Family-friendly</button>
               <div class="filter-icon">
                 <i class="fas fa-child fa-fw icon"></i>
               </div>
-              Family-friendly
-            </button>
+            </div>
 
-            <button class="filter">
+            <div class="button-wrapper">
+              <button class="filter">Pets allowed</button>
               <div class="filter-icon">
                 <i class="fas fa-dog fa-fw icon"></i>
               </div>
-              Pets allowed
-            </button>
+            </div>
           </div>
         </div>
 
-        <div class="wrapper" id="info">
+        <div class="flex-wrapper" id="info">
           <div class="fa-stack info">
             <i class="fas fa-info fa-stack-1x"></i>
             <i class="far fa-circle circle-outline fa-stack-2x"></i>
@@ -99,8 +101,8 @@
 
       <div class="wrapper-desktop">
         <!-- Section Most Popular -->
-        <section id="popular" class="wrapper">
-          <div class="wrapper" id="headline-popular">
+        <section id="popular" class="flex-wrapper">
+          <div class="flex-wrapper" id="headline-popular">
             <h2>Most Popular</h2>
             <i class="fas fa-chart-line"></i>
           </div>
@@ -154,7 +156,7 @@
         </section>
 
         <!-- Section Accommodations -->
-        <section id="accommodations" class="section wrapper">
+        <section id="accommodations" class="section flex-wrapper">
           <h2>Accommodations in Marseille</h2>
 
           <div class="section-tablet">
@@ -252,7 +254,7 @@
         </section>
 
         <!-- Section Activities -->
-        <section id="activities" class="wrapper">
+        <section id="activities" class="flex-wrapper">
           <h2>Activities in Marseille</h2>
 
           <div class="section-tablet">
@@ -303,7 +305,7 @@
     </main>
 
     <!-- Footer input -->
-    <footer class="wrapper">
+    <footer class="flex-wrapper">
       <div>
         <h3>About</h3>
         <p>Site Map</p>
