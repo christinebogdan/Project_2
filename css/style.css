@@ -152,7 +152,7 @@ header {
   color: #0065fc;
   font-weight: 600;
   border-top: solid white 3px;
-  padding: 45px 25px 0;
+  padding: 45px 0 0 25px;
 }
 
 /* --- NAVIGATION --- */
@@ -204,11 +204,11 @@ a:visited {
 
 input {
   flex-basis: 100%;
-  padding-right: 65px;
   border: solid #f2f2f2 1px;
   border-radius: 0 15px 15px 0;
   height: 50px;
   padding-left: 15px;
+  padding-right: 65px;
   color: black;
   font-weight: 600;
   font-size: 1.125em;
@@ -265,6 +265,10 @@ input:focus {
   border-radius: 15px;
   position: absolute;
   right: 0px;
+}
+
+#input-search-text {
+  display: none;
 }
 
 #button-list {
@@ -595,23 +599,6 @@ footer {
   header {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  #search-icon .fas {
-    display: none;
-  }
-
-  #search-icon {
-    border-radius: 0 15px 15px 0;
-    width: 100px;
-  }
-
-  #input-search-text {
-    display: inline-block;
-    color: white;
-    font-weight: 600;
-    font-size: 1.125em;
-    margin: 0;
   }
 
   #info {
