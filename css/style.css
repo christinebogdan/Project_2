@@ -147,13 +147,24 @@ header {
   margin-top: 0;
 }
 
-#signup {
+#signup-link {
+  display: flex;
   color: #0065fc;
   font-weight: 600;
-  padding-top: 41px;
+  border-top: solid white 3px;
+  padding: 45px 25px 0;
 }
 
 /* --- NAVIGATION --- */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
 
 #smartphone {
   flex: 0 0 100%;
@@ -169,20 +180,20 @@ header {
 }
 
 #nav-smartphone li {
-  padding: 0 20px 10px;
-  border-bottom: solid #f2f2f2 3px;
-  flex: 0 0 50%;
+  flex: 1 1 50%;
+}
+
+#nav-smartphone li a {
   text-align: center;
   font-weight: 300;
+  display: block;
+  padding: 0 20px 10px;
+  border-bottom: solid #f2f2f2 3px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:visited {
-  color: black;
+#nav-smartphone li a:hover {
+  color: #0065fc;
+  border-bottom: solid #0065fc 3px;
 }
 
 /* INPUT FIELD AND FILTER BUTTONS */
@@ -223,7 +234,7 @@ input {
   position: relative;
 }
 
-#location {
+#location-icon {
   display: flex;
   color: black;
   font-size: 1.125em;
@@ -474,18 +485,23 @@ footer {
     flex-direction: row;
   }
 
-  #nav-tablet li {
-    border-top: solid #f2f2f2 3px;
+  /* #nav-tablet li {
+    border-top: solid white 3px;
     padding: 45px 25px 0;
-    margin-top: 0;
+  } */
+
+  .li-tablet a {
+    border-top: solid white 3px;
+    padding: 45px 25px 0;
+  }
+
+  #nav-tablet li a:hover {
+    border-top: solid #0065fc 3px;
+    color: #0065fc;
   }
 
   .li-tablet {
     font-weight: 300;
-  }
-
-  #nav-tablet li {
-    padding-top: 41px;
   }
 
   #popular {
