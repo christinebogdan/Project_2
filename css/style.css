@@ -501,11 +501,6 @@ footer {
     flex-direction: row;
   }
 
-  /* #nav-tablet li {
-    border-top: solid white 3px;
-    padding: 45px 25px 0;
-  } */
-
   .li-tablet a {
     border-top: solid white 3px;
     padding: 45px 25px 0;
@@ -599,6 +594,21 @@ footer {
   header {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  #search-mobile {
+    display: none;
+  }
+
+  #input-search-text {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.125em;
+  }
+
+  #search-icon {
+    width: 90px;
+    border-radius: 0 15px 15px 0;
   }
 
   #info {
