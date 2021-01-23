@@ -579,6 +579,7 @@ footer {
   .card-act {
     flex-basis: 30%;
     margin-bottom: 25px;
+    height: 185px;
   }
 }
 
@@ -618,6 +619,8 @@ footer {
   #popular,
   #accommodations {
     margin: 10px 0 0 0;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   #activities {
@@ -707,6 +710,44 @@ footer {
     order: 3;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .image-act {
+    flex-grow: 1;
+  }
+
+  .card-text-act {
+    flex-basis: 60px;
+  }
+
+  #activities .section-tablet {
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 500px;
+  }
+
+  .section-desktop-act a:nth-child(1),
+  .section-desktop-act a:nth-child(4) {
+    flex-basis: 500px;
+  }
+
+  .section-desktop-act a:nth-child(2) {
+    flex-basis: 250px;
+  }
+
+  .section-desktop-act a:nth-child(3) {
+    flex-basis: 180px;
+  }
+
+  .section-desktop-act a:nth-child(5) {
+    flex-basis: 200px;
+  }
+
+  .section-desktop-act a:nth-child(6) {
+    flex-basis: 230px;
+  }
+  #activities .card-act {
+    width: 23%;
   }
 
   footer {
