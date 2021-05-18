@@ -2,7 +2,7 @@
 
 The project site can be found under the following link: 
 
-https://christinebogdan.github.io/Project_2/
+https://christinebogdan.github.io/p1_TravelWebsite/
 
 COMPATIBILITY
 - The whole site is responsive on mobile, tablet and desktop
