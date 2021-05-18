@@ -2,6 +2,8 @@
 
 ## Description
 
+Reservia is a website offering a vacation planning tool. Their site allows users to find accommodations and activities in the city of their choice. Accommodations can also be filtered.
+
 Aim of the project was to **turn mockups into a webpage**. Mockups for the Reservia Travel Website were provided for desktop and mobile, as well as a logo and all images. In addition to building the site, I had to make my own adaptions for a tablet layout and determine suitable breakpoints.
 
 The website content can be divided into **three parts**.
