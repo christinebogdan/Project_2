@@ -6,14 +6,13 @@ Reservia is a website offering a vacation planning tool. Their site allows users
 
 Aim of the project was to **turn mockups into a webpage**. Mockups for the Reservia Travel Website were provided for desktop and mobile, as well as a logo and all images. In addition to building the site, I had to make my own adaptions for a tablet layout and determine suitable breakpoints.
 
-The website content can be divided into **three parts**.
+## Objectives
 
-1. The navigation
-1. The search input field and filter buttons
-1. The main content
-   1. Most Popular
-   1. Accommodations
-   1. Activities
+- text of **search input field can be edited** by the user (search button not functional)
+- all accommodation or activity **cards are clickable** in their entirety (links are empty)
+- on hover, **filter buttons change their appearance** (filters not functional)
+- accommodations and activities **nav elements are anchor links** leading to respective section of page
+  The website content can be divided into **three parts**.
 
 ## Requirements
 
@@ -29,12 +28,12 @@ The website content can be divided into **three parts**.
 
 - Use webkit and moz for search input field placeholder styling
 
-## Features
+## Acquired Skills
 
-- text of **search input field can be edited** by the user (search button not functional)
-- all accommodation or activity **cards are clickable** in their entirety (links are empty)
-- on hover, **filter buttons change their appearance** (filters not functional)
-- accommodations and activities **nav elements are anchor links** leading to respective section of page
+- Track a code project with verison control on GitHub
+- Set up a development environment
+- Implement a responsive layout
+- Intergrate web content according to a mockup using HTML & CSS
 
 ## Demo
 
