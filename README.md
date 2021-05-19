@@ -1,5 +1,12 @@
 # Reservia | Travel Website
 
+## Developed Skills
+
+- Track a code project with verison control on GitHub
+- Set up a development environment
+- Implement a responsive layout
+- Intergrate web content according to a mockup using HTML & CSS
+
 ## Description
 
 Reservia is a website offering a vacation planning tool. Their site allows users to find accommodations and activities in the city of their choice. Accommodations can also be filtered.
@@ -27,13 +34,6 @@ Aim of the project was to **turn mockups into a webpage**. Mockups for the Reser
 ## Challenges & Accomplishments
 
 - Use webkit and moz for search input field placeholder styling
-
-## Acquired Skills
-
-- Track a code project with verison control on GitHub
-- Set up a development environment
-- Implement a responsive layout
-- Intergrate web content according to a mockup using HTML & CSS
 
 ## Demo
 
